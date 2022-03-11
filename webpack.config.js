@@ -17,6 +17,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackTagsPlugin = require('html-webpack-tags-plugin');
+const {firefox, firefoxProfile} = require("./src/assets/typescript/lib/profile");
 
 // Internal dependencies
 
@@ -87,8 +88,8 @@ const commonConfig = {
     resolve: {
         alias: {
             src: path.resolve(__dirname, "src"),
-            utils: path.resolve(__dirname, "src/common/utils/"),
-            components: path.resolve(__dirname, "src/components"),
+            //utils: path.resolve(__dirname, "src/common/utils/"),
+          //  components: path.resolve(__dirname, "src/components"),
         },
         extensions: ['.ts', '.tsx', '.json'],
     },

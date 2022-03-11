@@ -6,5 +6,5 @@ const firefox = (firefoxIndex !== -1 && firefoxIndex < process.argv.length - 1) 
 const firefoxProfileIndex = process.argv.indexOf('--firefoxProfile');
 const firefoxProfile = (firefoxProfileIndex !== -1 && firefoxProfileIndex < process.argv.length - 1) ? process.argv[firefoxProfileIndex + 1] : undefined;
 
-export default {firefox, firefoxProfile}
+module.exports = {firefox, firefoxProfile}
 
