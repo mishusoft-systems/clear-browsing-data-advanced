@@ -1,0 +1,12 @@
+# dependies, runtime and production build directories
+/.idea/
+/node_modules/
+/dist-*
+/tests/
+
+# lock file
+*.lock
+*-lock.json
+
+# other files
+.log

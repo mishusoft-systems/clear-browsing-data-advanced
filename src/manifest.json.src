@@ -1,0 +1,66 @@
+{
+  "manifest_version": 2,
+  "name": "IP Info Plus",
+  "short_name": "IPInfo Plus",
+  "author": "Mr. Al-Amin Ahamed",
+  "homepage_url": "https://www.mishusoft.com/browser/extension/ipinfoplus/",
+  "version": "1.4.2",
+  "default_locale": "en",
+  /*#!if browser_specific_settings===true*/
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "addon.firefox@developer.mishuoft.com"
+    }
+  },
+  /*#!endif*/
+  "description": "__MSG_extension_description__",
+  /*#!if supports_svg_icons===true*/
+  "icons": {
+    "16": "assets/images/image-16x16.svg",
+    "32": "assets/images/image-32x32.svg",
+    "48": "assets/images/image-48x48.svg",
+    "64": "assets/images/image-64x64.svg",
+    "96": "assets/images/image-96x96.svg"
+  },
+  /*#!else*/
+  "icons": {
+    "16": "assets/images/image-16x16.png",
+    "32": "assets/images/image-32x32.png",
+    "48": "assets/images/image-48x48.png",
+    "64": "assets/images/image-64x64.png",
+    "96": "assets/images/image-96x96.png"
+  },
+  /*#!endif*/
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["assets/js/background.js"]
+  },
+  "browser_action": {
+    /*#!if supports_browser_style===true*/
+    "browser_style": true,
+    /*#!endif*/
+    /*#!if supports_svg_icons===true*/
+    "default_icon": "assets/images/image.svg",
+    /*#!else*/
+    "default_icon": {
+        "16": "assets/images/image-16x16.png",
+        "32": "assets/images/image-32x32.png",
+        "48": "assets/images/image-48x48.png",
+        "64": "assets/images/image-64x64.png",
+        "96": "assets/images/image-96x96.png"
+    },
+    /*#!endif*/
+    "default_title": "__MSG_command_toggle_enabled__",
+    "default_popup": "ip-info-plus.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["assets/js/content.js"],
+      "all_frames": true
+    }
+  ]
+}
