@@ -55,7 +55,6 @@ async function main() {
 
   const files = [
     'package.json',
-    'package-lock.json',
     'webpack.config.js',
     'tsconfig.json',
   ];

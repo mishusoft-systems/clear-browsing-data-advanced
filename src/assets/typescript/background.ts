@@ -8,7 +8,7 @@
 
 
 
-import {browser} from "webextension-polyfill-ts";
+import browser from "webextension-polyfill";
 import {BrowserJS} from "./browserjs";
 import {app, today} from "./db";
 import {optimizeAppSettingObject, sendRequest} from "./lib-functions-background";

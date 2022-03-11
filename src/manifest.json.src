@@ -1,15 +1,15 @@
 {
   "manifest_version": 2,
-  "name": "IP Info Plus",
-  "short_name": "IPInfo Plus",
-  "author": "Mr. Al-Amin Ahamed",
-  "homepage_url": "https://www.mishusoft.com/browser/extension/ipinfoplus/",
-  "version": "1.4.2",
+  "name": "Browser cache cleaner",
+  "short_name": "browser-cache-cleaner",
+  "author": "Al Amin Ahamed",
+  "homepage_url": "https://github.com/mralaminahamed/browser-cache-cleaner/",
+  "version": "1.0.0",
   "default_locale": "en",
   /*#!if browser_specific_settings===true*/
   "browser_specific_settings": {
     "gecko": {
-      "id": "addon.firefox@developer.mishuoft.com"
+      "id": "cache.addon.firefox@developer.mishuoft.com"
     }
   },
   /*#!endif*/
@@ -54,7 +54,7 @@
     },
     /*#!endif*/
     "default_title": "__MSG_command_toggle_enabled__",
-    "default_popup": "ip-info-plus.html"
+    "default_popup": "popup.html"
   },
   "content_scripts": [
     {
