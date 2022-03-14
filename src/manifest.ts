@@ -1,19 +1,24 @@
 // https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json
 // https://developer.chrome.com/docs/extensions/mv3/manifest/
 export default {
+    "{{chrome}}.manifest_version": 3,
+    "{{firefox}}.manifest_version": 2,
     "default_locale": "en",
-    "icons": {
+    "{{chrome}}.icons": {
+        "16": "assets/images/icon-16.png",
+        "48": "assets/images/icon-48.png",
+        "128": "assets/images/icon-128.png"
+    },
+    "{{firefox}}.icons": {
         "16": "assets/images/icon-16.svg",
         "48": "assets/images/icon-48.svg",
         "128": "assets/images/icon-128.svg"
     },
-    "{{chrome}}.manifest_version": 3,
-    "{{firefox}}.manifest_version": 2,
     "{{chrome}}.action": {
         "default_icon": {
-            "16": "assets/images/icon-16.svg",
-            "48": "assets/images/icon-48.svg",
-            "128": "assets/images/icon-128.svg"
+            "16": "assets/images/icon-16.png",
+            "48": "assets/images/icon-48.png",
+            "128": "assets/images/icon-128.png"
         },
         "default_title": "__MSG_command_toggle_enabled__",
         "default_popup": "popup/index.html"

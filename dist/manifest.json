@@ -1,21 +1,21 @@
 {
-  "name": "Browser Cache Cleaner",
-  "description": "Browser cache cleaner",
+  "name": "Clear Browsing Data Advanced",
+  "description": "Clear browser data",
   "version": "1.0.0",
   "author": "Al Amin Ahamed",
-  "homepage_url": "https://github.com/mralaminahamed/browser-cache-cleaner/",
+  "homepage_url": "https://github.com/mralaminahamed/clear-browsing-data-advanced/",
+  "manifest_version": 3,
   "default_locale": "en",
   "icons": {
-    "16": "assets/images/icon-16.svg",
-    "48": "assets/images/icon-48.svg",
-    "128": "assets/images/icon-128.svg"
+    "16": "assets/images/icon-16.png",
+    "48": "assets/images/icon-48.png",
+    "128": "assets/images/icon-128.png"
   },
-  "manifest_version": 3,
   "action": {
     "default_icon": {
-      "16": "assets/images/icon-16.svg",
-      "48": "assets/images/icon-48.svg",
-      "128": "assets/images/icon-128.svg"
+      "16": "assets/images/icon-16.png",
+      "48": "assets/images/icon-48.png",
+      "128": "assets/images/icon-128.png"
     },
     "default_title": "__MSG_command_toggle_enabled__",
     "default_popup": "popup/index.html"
