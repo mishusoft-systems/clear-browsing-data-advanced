@@ -1,35 +1,18 @@
 {
   "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
     "module": "ESNext",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "outDir": "extension",
-    "pretty": true,
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "Node",
+    "strict": true,
     "sourceMap": true,
-    "strictNullChecks": true,
     "resolveJsonModule": true,
-    "target": "ES5",
-    "typeRoots": [
-      "node_modules/@types",
-      "node_modules/web-ext-types"
-    ],
-    "lib": [
-      "ESNext",
-      "DOM"
-    ],
-    "jsx": "react-jsx"
+    "esModuleInterop": true,
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true
   },
-  "ts-node": {
-    "esm": true,
-    "compilerOptions": {
-      "module": "CommonJS",
-    }
-  },
-  "include": [
-    "./src/assets/typescript/*"
-  ]
+  "include": ["src"]
 }

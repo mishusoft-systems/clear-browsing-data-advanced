@@ -1,0 +1,14 @@
+{
+  "extension_description": {
+    "message": "It uses a database of IP addresses, provided from ipdata.co, that are associated to cities, countries and to other information.",
+    "description": "Description of the what the extension does."
+  },
+  "command_toggle_description": {
+    "message": "IP Info Plus",
+    "description": "Tooltip for toolbar button to turn IP Info Plus title"
+  },
+  "command_toggle_enabled": {
+    "message": "IP Info Plus",
+    "description": "Tooltip for toolbar button when enable."
+  }
+}
