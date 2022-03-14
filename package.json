@@ -55,7 +55,6 @@
     "sourceDir": "dist"
   },
   "dependencies": {
-    "archiver": "^5.3.0",
-    "web-ext": "^6.7.0"
+    "archiver": "^5.3.0"
   }
 }
