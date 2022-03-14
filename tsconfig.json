@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "ES2015",
+    "module": "ESNext",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
@@ -12,7 +12,7 @@
     "sourceMap": true,
     "strictNullChecks": true,
     "resolveJsonModule": true,
-    "target": "ES2015",
+    "target": "ES5",
     "typeRoots": [
       "node_modules/@types",
       "node_modules/web-ext-types"
@@ -22,6 +22,12 @@
       "DOM"
     ],
     "jsx": "react-jsx"
+  },
+  "ts-node": {
+    "esm": true,
+    "compilerOptions": {
+      "module": "CommonJS",
+    }
   },
   "include": [
     "./src/assets/typescript/*"

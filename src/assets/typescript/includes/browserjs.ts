@@ -6,7 +6,7 @@
 * license : GPL-3.0-only
 * */
 
-export class BrowserJS {
+export default class BrowserJS {
     public BrowserName:any;
     public BrowserNameFull:any
     public BrowserVersion:any

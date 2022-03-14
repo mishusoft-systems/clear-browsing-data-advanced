@@ -16,8 +16,8 @@
 
 // https://pretagteam.com/question/add-a-separate-html-file-into-createreactapp
 
-import {sendRequest} from "./lib-functions-background";
-import {captureElementById, createElement} from "./lib-functions";
+import {sendRequest} from "./includes/lib-functions-background";
+import {captureElementById, createElement} from "./includes/lib-functions";
 
 const ipd: any = captureElementById('ipd-address');
 const ipb: any = captureElementById('ipd-search-btn');

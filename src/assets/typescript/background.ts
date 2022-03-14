@@ -9,10 +9,10 @@
 
 
 import browser from "webextension-polyfill";
-import {BrowserJS} from "./browserjs";
-import {app, today} from "./db";
-import {optimizeAppSettingObject, sendRequest} from "./lib-functions-background";
-import {globalAppMonitorURL} from "./lib-main";
+import BrowserJS from "./includes/browserjs";
+import {app, today} from "./includes/db";
+import {optimizeAppSettingObject, sendRequest} from "./includes/lib-functions-background";
+import {globalAppMonitorURL} from "./includes/lib-main";
 
 let globalAppBrowser: any;
 let globalAppIP: any;
