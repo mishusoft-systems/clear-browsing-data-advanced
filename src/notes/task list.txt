@@ -1,0 +1,6 @@
+popup
+option
+context
+
+idea
+clear browsing data
