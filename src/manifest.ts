@@ -26,8 +26,30 @@ export default {
     },
     "{{firefox}}.browser_specific_settings": {
         "gecko": {
-            "id": "cache.addon.firefox@developer.mishuoft.com"
+            "id": "cache-clear.addon.firefox@developer.mishuoft.com"
         }
+    },
+    // https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/commands
+    "{{firefox}}.commands": {
+        "toggle-feature": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Y",
+                "linux": "Ctrl+Shift+Y",
+                "mac": "Command+Shift+Y",
+            },
+            "description": "Clear browser cache"
+        }
+    },
+    // https://developer.chrome.com/docs/extensions/reference/commands/
+    "{{chrome}}.commands": {
+        "run-clean-cache": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Y",
+                "mac": "Command+Shift+Y",
+            },
+            "description": "Clear browser cache.",
+            "global": true
+        },
     },
     "background": {
         "{{firefox}}.scripts": ["background/index.ts"],
